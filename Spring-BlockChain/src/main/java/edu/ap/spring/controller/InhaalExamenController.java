@@ -145,9 +145,11 @@ public class InhaalExamenController {
 	public String getBalance(@RequestParam("map") MultiValueMap<String, String> map) {
 		String walNme1 = map.getFirst("wallet1");
 		String walNme2 = map.getFirst("wallet2");
-		int amount = Integer.parseInt(map.getFirst("amount"));
+		float amount = Integer.parseInt(map.getFirst("amount"));
 
-		if(walNme1 == walletA.getName() && wal)
+		if (walNme1 == walletA.getName() && walNme2 == walletB.getName())
+			walletA.getWallet().sendFunds(walletB.getWallet().getPublicKey(), amount);
+
 		StringBuilder b = new StringBuilder();
 
 		b.append("<html><body>");
