@@ -1,0 +1,29 @@
+Exam Questions 25/03/2019
+I expect screenshots of your working application for this exam! For every question, I want to see a fullscreen screenshot of the functionality (so NOT the code), preferably 3 screenshots per questions.
+
+No screenshots = -3 points per question.
+
+Monitoring code : 372518
+
+Question 1 (14 points)
+
+Start from the attached BlockChain project and make a Spring boot WebService that allows to :
+1/ check the balance of a wallet on a URL : eg http://localhost:8080/balance/walletA (4 points)
+2/ transfer funds from one wallet to another, using a form that can be retrieved from and posts to http://localhost:8080/transaction (6 points)
+The WebService has two wallets in total (walletA and walletB) and uses Thymeleaf as templating engine. Refer to the included JUnit test (SpringTest1.java) for the setup and funds transfer code (please note that Block and Transactions are not beans anymore). Use the @PostConstruct annotation to run the setup.
+Also provide persistency for the BlockChain json whenever it changes (4 points). The functionality should be in the jpa package. Use @Column(length=10000) to provide enough space in the column.
+All functionality should conform to the JUnit tests in SpringTest2.java.
+
+IMPORTANT
+==========
+1/ Restart VSCode when you experience weird errors
+2/ Clear your .m2 repository if step 1 doesn't solve it
+
+Question 2 (6 points)
+
+Make a WebService in Django that returns the number of hours, minutes and seconds that remain until the official Brexit date. From Wikipedia : Brexit (a portmanteau of "British" and "exit") is the withdrawal of the United Kingdom (UK) from the European Union (EU), that is legally scheduled to take place on 29 March 2019 at 11 pm UK time.
+
+Add the projects to your Github account. Provide at least 3 (three) meaningful commits with different comments. Less than 3 commits = -2 points per question.
+Send me (philippe.possemiers@ap.be) the Github link to your projects AND the screenshots.
+
+Laatste wijziging: maandag, 25 maart 2019, 10:24 
